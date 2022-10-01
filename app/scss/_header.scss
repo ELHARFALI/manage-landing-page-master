@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    background-color: #fff;
+    padding-top: calc(76px - 16px);
+    padding-bottom: calc(76px - 16px);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            position: relative;
+
+            &__list {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    &:not(:last-child) {
+                        margin-right: 36px;
+                    }
+
+                    a {
+                        color: $DarkBlue;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

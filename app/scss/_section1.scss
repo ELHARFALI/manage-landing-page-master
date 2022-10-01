@@ -1,0 +1,42 @@
+.section1 {
+    margin-bottom: 60px;
+
+    .container {
+
+        .even__columns {
+
+            .left {
+                max-width: 450px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                @include large {
+                    text-align: center;
+                    align-items: center;
+                    margin-inline: auto;
+                }
+
+                h1 {
+                    font-size: 2.65rem;
+                    margin-bottom: 33px;
+                }
+
+                p {
+                    margin-bottom: 45px;
+                    color: $DarkGrayishBlue;
+                    font-size: 1.05rem;
+                }
+            }
+
+            .right {
+                text-align: center;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
