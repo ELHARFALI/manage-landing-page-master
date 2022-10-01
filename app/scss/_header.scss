@@ -4,10 +4,16 @@
     padding-top: calc(76px - 16px);
     padding-bottom: calc(76px - 16px);
 
+    @include tablet {
+        padding: 45px 0;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+
 
         .logo {
             display: flex;
@@ -16,23 +22,74 @@
         }
 
         .navbar {
-            position: relative;
+            transition: all 0.3s ease-in-out;
+
+            @include tablet {
+                position: absolute;
+                top: 70px;
+                left: -120%;
+                width: 100%;
+                margin-inline: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #333;
+                z-index: 10;
+                border-radius: 10px;
+            }
+
+            &.active {
+                left: 0;
+            }
 
             &__list {
                 display: flex;
                 justify-content: space-between;
+
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: center;
+                    padding: 1rem 0;
+                }
 
                 li {
                     &:not(:last-child) {
                         margin-right: 36px;
                     }
 
+                    @include tablet {
+                        &:not(:last-child) {
+                            margin-right: 0px;
+                        }
+                    }
+
                     a {
                         color: $DarkBlue;
+                        display: block;
+                        font-weight: 400;
+
+                        @include tablet {
+                            color: #fff;
+                            padding-top: 30px;
+                            font-weight: 500;
+                            width: 40%;
+                            margin-inline: auto;
+
+                            &:last-child {
+                                padding-bottom: 30px;
+                            }
+                        }
                     }
 
                     
                 }
+            }
+        }
+        .btn-primary {
+            @include tablet {
+                display: none;
             }
         }
     }
