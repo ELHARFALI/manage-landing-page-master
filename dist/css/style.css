@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: #fff;
     z-index: 10;
     border-radius: 10px;
   }
@@ -78,7 +78,7 @@
 }
 @media (max-width: 991px) {
   .header .container .navbar__list li a {
-    color: #fff;
+    color: hsl(228deg, 39%, 23%);
     padding-top: 30px;
     font-weight: 500;
     width: 40%;
@@ -213,4 +213,9 @@ body {
 
 .overlay-active {
   display: block;
+}
+@media (min-width: 992px) {
+  .overlay-active {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

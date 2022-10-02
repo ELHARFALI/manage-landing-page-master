@@ -95,4 +95,8 @@ body {
 
 .overlay-active {
     display: block;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
 }
