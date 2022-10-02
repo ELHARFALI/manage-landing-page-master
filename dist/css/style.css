@@ -16,6 +16,14 @@
   align-items: center;
   position: relative;
 }
+.header .container .menu {
+  display: none;
+}
+@media (max-width: 991px) {
+  .header .container .menu {
+    display: block;
+  }
+}
 .header .container .logo {
   display: flex;
   justify-content: center;
@@ -178,4 +186,31 @@ body {
   cursor: pointer;
   color: #fff;
   border-radius: 50px;
+}
+
+.img-active {
+  display: none;
+}
+
+.img2 {
+  display: none;
+}
+
+.img-isactive {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.13);
+  z-index: 5;
+  display: none;
+}
+
+.overlay-active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

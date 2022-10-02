@@ -14,6 +14,14 @@
         align-items: center;
         position: relative;
 
+        .menu {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+
 
         .logo {
             display: flex;
