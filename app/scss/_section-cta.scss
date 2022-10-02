@@ -1,0 +1,46 @@
+
+.cta {
+    background-color: $BrightRed;
+
+    .container {
+
+
+        .left {
+
+            p {
+                font-size: 2.3rem;
+                font-weight: 500;
+                line-height: 1.1;
+                color: #fff;
+                padding: 72px 0;
+
+                @include large {
+                    text-align: center;
+                    padding-top: 100px;
+                    padding-bottom: 35px;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+
+            @include large {
+                justify-content: center;
+                padding-bottom: 90px;
+            }
+
+            .button {
+                padding: 16px 36px;
+                background-color: #fff;
+                cursor: pointer;
+                color: $BrightRed;
+                border-radius: 50px;
+                font-weight: 700;
+            }
+        }
+    }
+}

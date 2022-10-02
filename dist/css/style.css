@@ -195,6 +195,43 @@
   }
 }
 
+.cta {
+  background-color: hsl(12deg, 88%, 59%);
+}
+.cta .container .left p {
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #fff;
+  padding: 72px 0;
+}
+@media (max-width: 50em) {
+  .cta .container .left p {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 35px;
+  }
+}
+.cta .container .right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+@media (max-width: 50em) {
+  .cta .container .right {
+    justify-content: center;
+    padding-bottom: 90px;
+  }
+}
+.cta .container .right .button {
+  padding: 16px 36px;
+  background-color: #fff;
+  cursor: pointer;
+  color: hsl(12deg, 88%, 59%);
+  border-radius: 50px;
+  font-weight: 700;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
