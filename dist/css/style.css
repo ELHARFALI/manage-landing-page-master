@@ -232,6 +232,60 @@
   font-weight: 700;
 }
 
+.footer {
+  background-color: #1e1e26;
+}
+.footer .container {
+  padding: 60px 0;
+}
+.footer .container .even__columns .footer__logo {
+  display: block;
+  margin-bottom: 80px;
+}
+.footer .container .even__columns .icons {
+  display: flex;
+}
+.footer .container .even__columns .icons li:not(:last-child) {
+  margin-right: 16px;
+}
+.footer .container .even__columns .footer__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .even__columns .footer__nav ul li a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.footer .container .even__columns .footer__nav ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.footer .container .even__columns .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .container .even__columns .flex form {
+  width: 100%;
+}
+.footer .container .even__columns .flex form input {
+  height: 2.4rem;
+  width: 55%;
+  padding-left: 10px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+}
+.footer .container .even__columns .flex form .btn-primary {
+  font-size: 0.7rem;
+  padding: 16px 21px;
+}
+.footer .container .even__columns .flex p {
+  color: hsl(227deg, 12%, 61%);
+  font-size: 0.8rem;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
