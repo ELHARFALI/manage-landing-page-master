@@ -8,6 +8,10 @@
 
         .even__columns {
 
+            @include large {
+                text-align: center;
+            }
+
             .footer__logo {
                 display: block;
                 margin-bottom: 80px;
@@ -16,8 +20,13 @@
             .icons {
                 display: flex;
 
+                @include large {
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 li:not(:last-child) {
-                            margin-right: 16px;
+                    margin-right: 16px;
                     
                 }
             }
@@ -25,6 +34,11 @@
             .footer__nav {
                 display: flex;
                 justify-content: space-between;
+
+                @include large {
+                    justify-content: center;
+                    flex-direction: column;
+                }
 
                 ul {
 
@@ -38,6 +52,24 @@
                         &:not(:last-child) {
                             margin-bottom: 24px;
                         }
+
+                        @include large {
+                            margin-bottom: 24px;
+                        }
+                    }
+
+                    
+                }
+
+                .ul__one {
+                    @include large {
+                        margin-top: 40px;
+                    }
+                }
+
+                .ul__two {
+                    @include large {
+                        margin-bottom: 40px;
                     }
                 }
             }
@@ -59,6 +91,10 @@
                         border: none;
                         outline: none;
                         margin-left: 2rem;
+
+                        @include large {
+                            margin-bottom: 2rem;
+                        }
                     }
 
                     .btn-primary {
